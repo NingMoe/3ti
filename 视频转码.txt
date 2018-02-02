@@ -17,7 +17,7 @@ yasm下载：http://yasm.tortall.net/Download.html
 ./configure --prefix=/usr/local/yasm
 
 make
-
+ 
 make install
 
 2、解压x264，进入目录，输入：
