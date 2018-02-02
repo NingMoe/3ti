@@ -1,0 +1,1 @@
+SELECT order_id,ship_status,pay_status,ship_status,eai_ship_status,from_unixtime(createtime)  FROM `sdb_b2c_orders` WHERE    createtime>unix_timestamp('2018-01-06')

@@ -1,0 +1,57 @@
+Linux下编译带x264的ffmpeg的方法
+原创 2014年04月24日 11:19:54
+
+一、环境准备
+
+ffmpeg下载：http://www.ffmpeg.org/download.html
+
+x264下载：http://download.videolan.org/x264/snapshots/
+
+yasm下载：http://yasm.tortall.net/Download.html
+
+
+二、编译
+
+1、编译yasm。
+
+./configure --prefix=/usr/local/yasm
+
+make
+
+make install
+
+2、解压x264，进入目录，输入：
+
+./configure --prefix=/usr/local/x264 --enable-shared --enable-static --enable-yasm
+
+make
+
+make install
+
+3、解压ffmpeg，进入目录，输入：
+
+./configure --prefix=/usr/local/ffmpeg --enable-shared --enable-yasm --enable-libx264 --enable-gpl --enable-pthreads --extra-cflags=-I/usr/local/x264/include --extra-ldflags=-L/usr/local/x264/lib
+
+make
+
+make install
+
+注意：
+
+①在编译ffmpeg时，我是在vmware虚拟机下共享的windows目录下编译的，出现不支持ln操作的错误，解决办法是将ffmpeg在linux系统文件格式下解压编译。
+
+②需要增加x264头文件及库的目录的字段。
+
+
+三、编译完成后，修改环境编译，我在/etc/profile文件下增加如下字段：
+FFMPEG=/usr/local/ffmpeg
+X264=/usr/local/x264
+YASM=/usr/local/yasm
+export FFMPEG X264 YASM
+export PATH=$PATH:$FFMPEG/bin:$X264/bin:$YASM/bin
+export LD_LIBRARY_PATH=$YASM/lib:$X264/lib:$FFMPEG/lib:$LD_LIBRARY_PATH
+
+这样ffmpeg就能在linux环境下使用了。
+
+
+另外：若要编译带H265(HEVC)的ffmpeg，请参照：http://blog.csdn.net/Season_hangzhou/article/details/52138537

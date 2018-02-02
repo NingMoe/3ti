@@ -1,0 +1,93 @@
+查找文件包含字符串： grep -nr "170726230865892" ./
+
+find . -type f -name "*.php" |xargs grep -Hn "170727101936050"
+
+git:
+
+1、首先到官网上下载git包，地址为http://git-scm.com/download
+
+2、输入命令tar zxvf git-1.7.9.4.tat.gz 解压文件到当前目录
+
+3、依次执行./configure
+
+make
+
+sudo make install
+
+4、安装成功之后执行git --version查看是否安装成功
+
+
+nginx:
+
+启动代码格式：nginx安装目录地址 -c nginx配置文件地址
+
+例如：
+
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+
+停止:
+
+ ps -ef|grep nginx
+
+ kill -QUIT 2072
+
+
+重启Nginx服务
+/usr/local/nginx/sbin/nginx -s reload 
+
+
+关闭php服务
+kill -INT `cat /usr/local/php/var/run/php-fpm.pid`
+
+重启php服务
+/usr/local/php/sbin/php-fpm -c /etc/php.ini -y /usr/local/php/etc/php-fpm.conf
+
+解压：
+tar -xjvf ffmpeg-3.3.1.tar.bz2
+tar -xvzf yasm-1.3.0.tar.gz
+
+ffmpeg安装(版本：ffmpeg-2.8.13)：
+
+./configure --enable-shared --prefix=/usr/local/ffmpeg --enable-yasm --enable-libx264 --enable-gpl --enable-pthreads
+
+https://www.cnblogs.com/freeweb/p/6897907.html
+
+ffmpeg库文件（lib）放在：
+/usr/local/include 
+
+ffmpeg-php安装：
+git clone https://github.com/tony2001/ffmpeg-php.git 
+/usr/local/php/bin/phpize ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
+
+
+/usr/local/php/bin/phpize ./configure --with-php-config=/usr/local/php/bin/php-config --with-ffmpeg=/usr/local/ffmpeg --enable-skip-gd-check && make && make install
+
+
+编译环境修改：
+vi /etc/profile
+
+FFMPEG=/usr/local/ffmpeg
+X264=/usr/local/x264
+YASM=/usr/local/yasm
+export FFMPEG X264 YASM
+export PATH=$PATH:$FFMPEG/bin:$X264/bin:$YASM/bin
+export LD_LIBRARY_PATH=$YASM/lib:$X264/lib:$FFMPEG/lib:$LD_LIBRARY_PATH
+
+PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
+export PKG_CONFIG_PATH
+
+执行. /etc/profile
+
+
+加载动态链接库：
+vi /etc/ld.so.conf
+
+加入：/usr/local/lib
+
+执行ldconfig
+
+
+
+在php.ini中加入extension=ffmpeg.so
+
+

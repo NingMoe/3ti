@@ -1,0 +1,147 @@
+git账号：jack.wang 密码：yl375195711
+
+拉取文件：git pull origin master
+
+解决文件冲突： git checkout .
+
+查找文件包含字符串： grep -nr "170726230865892" ./
+
+find . -type f -name "*.php" |xargs grep -Hn "170727101936050"
+
+
+公积金账号：177379637205
+开户名:中国四达国际经济技术合作有限公司沪分公司 
+帐号:055753-881216437205
+
+CPB后台： http://testing.cledepeau-beaute.com.cn/shopadmin/  账号密码：3ti  admin#369  3ti  testcpb2017
+
+GLS后台：http://staging.shiseido.com.cn/index.php/shopadmin/index.php 账号密码：admin  admin123 admin  testgls2017
+
+测试手机域名： http://t.cledepeau-beaute.com.cn/
+
+1、CPB测试环境http://gitlab.3tichina.com/grp-project/shiseido-cpb-code.git 
+
+2、CPB本番环境http://gitlab.3tichina.com/grp-project/cpb.git 
+
+3、GLS测试环境http://gitlab.3tichina.com/grp-project/shiseido-gls.git 
+
+4、GLS本番环境http://gitlab.3tichina.com/grp-project/shiseido-code.git 
+
+
+CPB正式环境后台登录账户(原始)： 3ti  3ti#2017@0605
+
+CPB正式环境后台登录账户： 3ti  3ti#2017@1129
+
+gls正式环境后台登录账户(原始)： admin   Shiseido2015!
+
+gls正式环境后台登录账户： admin   Shiseido20171129!
+
+
+
+数据库登陆地址： http://staging.shiseido.com.cn:88/public/files/amp/ 
+// CPB测试数据库配置
+define('DB_HOST', 'rm-uf6tb56720650261u.mysql.rds.aliyuncs.com'); // 数据库HOST
+define('DB_USER', 'cpb_test'); // 数据库用户名
+define('DB_PASSWORD', 'Cdx#2316'); // 数据库密码
+
+// GLS测试数据库配置
+define('DB_HOST', 'rm-uf6rab4d8iq00mgqo.mysql.rds.aliyuncs.com'); // 数据库HOST
+define('DB_USER', 'staging_shiseido'); // 数据库用户名
+define('DB_PASSWORD', 'hD30)46K*w2S'); // 数据库密码
+
+
+//CPB线上数据库配置
+define('DB_USER', 'utm201610'); // 数据库用户名
+define('DB_PASSWORD', 'Cdx#2316'); // 数据库密码
+define('DB_HOST', 'rm-uf6tb56720650261u.mysql.rds.aliyuncs.com'); // 数据库HOST
+
+
+// GLS线上数据库配置
+define('DB_USER', 'ec_user'); // 数据库用户名
+define('DB_PASSWORD', 'uUZ2Jp9z'); // 数据库密码
+define('DB_HOST', 'rm-uf6tb56720650261u.mysql.rds.aliyuncs.com'); // 数据库HOST
+
+
+//线上服务器登陆地址：https://139.196.78.140/index.php/
+系统登录信息：
+用户名：xiangzhongjie   平台登陆密码：xzj0808
+服务登陆密码:I6i=Bah)
+
+
+测试服务器远程连接地址：
+101.230.8.67:3448
+administrator
+1q2w3e4r5taa
+
+线上远程
+101.230.8.70:7890 
+administrator
+3ti@P@ssw0rd
+
+
+
+测试服务器堡垒机登陆：
+系统登录信息如下：
+（10.26.190.98,10.26.190.123）
+用户名：xiangzhongjie
+密码：I6i=Bah)
+
+用户名：chenzhijie
+密码：I6i=Bah)
+
+1229
+
+
+cbp会员账号：13917430987 密码：123456  kkk111
+
+百度后台：用户名是：CPBChina  密码是：XINkaishi99  手机号：13636567290
+
+
+微信公众号信息：
+微信账号：jjduan@3ti.us
+登录密码：3titest01
+
+开发者ID(AppID)
+wx813e6c4051c7c4d0 
+开发者密码(AppSecret)
+c6da3e06cd58ce2682caec73cab11bde
+
+SVN帐号及权限已开通，请知晓。
+
+SVN地址：http://101.230.8.67:9000/svn/shiseido2 
+
+（SVN账号及密码：jack.wang/Jack15#）
+
+
+系统登录信息：
+（10.26.190.46,10.26.190.52）
+用户名：chenzhijie
+密码：I6i=Bah)
+
+亚特兰蒂斯：
+192.168.10.69 3ti : z4@TorXyV6kL
+
+
+特卖：
+define('DB_USER', 'ec_user'); // 数据库用户名
+define('DB_PASSWORD', 'rZmjcJ6mUQ'); // 数据库密码
+define('DB_NAME', 'ec_db'); // 数据库名
+define('DB_HOST', 'rm-uf6rab4d8iq00mgqo.mysql.rds.aliyuncs.com'); // 数据库
+
+wife: 3TI 密码：ASUS@3ti00 
+
+
+drupal菜单管理页面： http://www.resort.dev/admin/structure/menu
+
+
+
+
+
+
+
+
+
+
+
+
+
