@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false    //忽略权限修改
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = http://gitlab.3tichina.com/grp-project/SanYa-php.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[gui]
+	wmstate = normal
+	geometry = 841x483+175+175 189 218
+[credential]  
+    helper = store    //记住密码
