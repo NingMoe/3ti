@@ -135,6 +135,11 @@ drupal菜单管理页面： http://www.resort.dev/admin/structure/menu
 
 
 
+原线上FTP地址：10.26.190.53
+用户名：ecftp
+密码 fFibQoc9L7
+
+
 
 
 
