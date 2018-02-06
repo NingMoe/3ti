@@ -8,7 +8,7 @@
 
 $dataInfo=$_GET;
 echo "正在更新文件...<br>";
-exec("cd /usr/local/nginx/html/SanYa-php/;git pull http://".$dataInfo['name'].":".$dataInfo['password']."@gitlab.3tichina.com/grp-project/SanYa-php.git 2>&1",$out);
+exec("cd /opt/web/shiseido-cpb-code;git pull http://".$dataInfo['name'].":".$dataInfo['password']."@gitlab.3tichina.com/grp-project/shiseido-cpb-code.git 2>&1",$out);
 header("Content-type: text/html; charset=utf-8"); 
 var_export($out);
 echo "<br>更新文件成功！";
