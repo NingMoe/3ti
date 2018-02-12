@@ -1,0 +1,7 @@
+D:\web\online\shiseido-code\app\b2c\lib\order\total.php   159行 订单总价格+礼包运费
+D:\web\online\shiseido-code\custom\b2c\lib\order\dlytype.php  62行 运费价格+礼包运费
+
+D:\web\online\shiseido-code\custom\b2c\controller\site\cart.php 128行  购物车清空礼包
+
+
+D:\web\shiseido-code\custom\b2c\lib\cart\postfilter\promotion.php  38行 试用品不参与促销活动

@@ -140,9 +140,19 @@ drupal菜单管理页面： http://www.resort.dev/admin/structure/menu
 密码 fFibQoc9L7
 
 
+cpb微信支付：
+
+ 商户平台	                支付平台
+账号：	1388158902	        sunjiajun@shiseido.cn
+密码：	130516	                CPBwebsite1206
 
 
 
+亚特兰蒂斯线上：
+数据库地址 atlantis.mysql.rds.aliyuncs.com     
+数据库名altantis-cms    
+用户名 atlantis  密码 Atlantis@12345        
+服务器地址 47.97.176.106     用户名root 密码 Atlantis@12345
 
 
 

@@ -1,0 +1,11 @@
+D:\web\cpb\custom\ectools\lib\payment\select.php    73行  选择支付方式
+
+
+微信支付：
+D:\web\online\shiseido-cpb-code\app\base\lib\rpc\service.php  47行
+
+D:\web\online\shiseido-cpb-code\app\ectools\lib\payment\api.php  38行
+
+D:\web\online\shiseido-cpb-code\custom\weixin\lib\api.php  89行
+
+D:\web\online\shiseido-cpb-code\app\weixin\lib\payment\plugin\wxpayjsapi.php  241行
