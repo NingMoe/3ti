@@ -9,3 +9,6 @@ D:\web\online\shiseido-cpb-code\app\ectools\lib\payment\api.php  38行
 D:\web\online\shiseido-cpb-code\custom\weixin\lib\api.php  89行
 
 D:\web\online\shiseido-cpb-code\app\weixin\lib\payment\plugin\wxpayjsapi.php  241行
+
+
+D:\web\shiseido-cpb-code\custom\eaisync\lib\eaisale.php 561行 005接口支付方式
