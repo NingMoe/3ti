@@ -5,3 +5,6 @@ D:\web\online\shiseido-code\custom\b2c\controller\site\cart.php 128行  购物�
 
 
 D:\web\shiseido-code\custom\b2c\lib\cart\postfilter\promotion.php  38行 试用品不参与促销活动
+
+
+D:\web\shiseido-code\custom\b2c\controller\site\member.php  619行  礼包订单详情

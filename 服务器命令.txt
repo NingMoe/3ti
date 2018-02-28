@@ -114,3 +114,32 @@ vi /etc/python/cert-verification.cfg
 verify=disable
 
 yum update openssl 
+
+
+去除Teleport Pro 多余字符：
+查找：\btppabs="h[^"]*"
+
+替换：（空）
+
+查找：tpa=http://[^\s]*.gif
+
+替换：（空）
+
+查找：/\*tpa.*?\*/
+
+替换：（空）
+查找：href=" *javascript:if\(confirm\('(htt[^"\s]*).*?"
+或者查找：href=" *javascript:if\(confirm\(%27(htt[^"\s]*).*?"
+替换：href="$1"
+
+
+
+location ^~ /phpMyAdmin/ {
+　　	proxy_pass 127.0.0.1:80 ;
+　　}
+location ~ \.php$ {
+　　proxy_pass 158.37.70.143:80 ;
+　　}
+location = /article-123.html {
+            proxy_pass http://backend;
+        }
