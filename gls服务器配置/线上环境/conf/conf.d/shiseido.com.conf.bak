@@ -1,0 +1,5 @@
+server {
+        listen  80;
+        server_name  shiseido.com.cn;
+        return 301 http://www.shiseido.com.cn$request_uri;
+}
