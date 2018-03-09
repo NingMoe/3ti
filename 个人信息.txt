@@ -155,6 +155,13 @@ cpb微信支付：
 服务器地址 47.97.176.106     用户名root 密码 Atlantis@12345
 
 
+乌拉拉：
+后台地址：http://cardtest.urara.cn/admin/privilege.php?act=login  admin  admin#urara
+
+服务器：10.26.190.128cardtest.urara.cn
+
+网站路径：/usr/local/apache/htdocs/new
+
 
 
 

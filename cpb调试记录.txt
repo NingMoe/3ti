@@ -12,3 +12,6 @@ D:\web\online\shiseido-cpb-code\app\weixin\lib\payment\plugin\wxpayjsapi.php  24
 
 
 D:\web\shiseido-cpb-code\custom\eaisync\lib\eaisale.php 561行 005接口支付方式
+
+
+D:\web\shiseido-cpb-code\custom\b2c\lib\cart\objects.php 160行 活动规则修改
