@@ -1,0 +1,73 @@
+/*
+      public function test(){
+      $sql="SELECT
+      b.order_id,
+      c.name,
+      a.product_id,
+      a.goods_id,
+      a.price,
+      a.nums,
+      b.total_amount,
+      b.createtime,
+      b.payment,
+      b.shipping,
+      b.status,
+      b.ship_addr,
+      b.ship_name,
+      b.ship_tel,
+      b.pay_status,
+      b.ship_status,
+      b.payed,
+      b.ship_email,
+      b.ship_mobile
+      FROM
+      sdb_b2c_order_items AS a
+      LEFT JOIN sdb_b2c_orders AS b
+      ON b.order_id = a.order_id
+      LEFT JOIN sdb_b2c_goods AS c
+      ON c.goods_id = a.goods_id
+      WHERE b.createtime > UNIX_TIMESTAMP('2017-11-01')
+      ORDER BY b.`createtime` ASC ";
+      $orderList =  kernel::database()->select($sql);
+
+      $startDate=strtotime("2017-11-01 00:00:00");
+      $startItem=1;
+
+      $orderExport=array();
+      //+5 minute
+      while ($startDate<time()){
+      $endDate=strtotime("2017-11-01 00:00:00 +".($startItem*5)." minute");
+      foreach ($orderList as $key=>$val){
+      if($startDate<$val['createtime']&&$val['createtime']<$endDate){
+      $val['createtime']=date("Y-m-d H:i:s",$val['createtime']);
+      $val['order_id']="ID：".(string)$val['order_id'];
+      $orderExport[date("Y-m-d H:i:s",$startDate)][]=$val;
+      }
+      }
+      $startDate=$endDate;
+      $startItem++;
+      }
+
+      $fileName=array("name"=>"orderList");
+      kernel::single('desktop_io_type_csv')->export_header($fileName);
+
+      $fileTitle=" ,订单ID,商品名称,货品ID,商品ID,商品价格,购买数量,订单价格,下单日期,支付方式,快递公司,订单状态,地址,收货人,收货人电话,支付状态,发货状态,订单支付金额,收货人邮箱,收货人手机";
+      $fileContent="";
+      foreach ($orderExport as $key=>$val){
+      $fileContent.="日期：".$key."\n";
+      foreach ($val as $k=>$v){
+      $fileContent.=" ,";
+      foreach ($v as $kk=>$vv){
+      $fileContent.=$vv.",";
+      }
+      $fileContent.="\n";
+      }
+      }
+      $fileExport=array(
+      "title"=>$fileTitle,
+      "contents"=>$fileContent
+      );
+      kernel::single('desktop_io_type_csv')->export($fileExport,1);
+      exit;
+
+      } */
