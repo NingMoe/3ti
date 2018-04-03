@@ -36,6 +36,9 @@
                 });
             });
             
+            
+            
+            
             /*
              * 选择区域联动
              * @param {int} elemtIndex 
@@ -86,27 +89,24 @@
              * 初始化区域选择
              */
             function region_init(){
-                var area=$("#areaSelect input[name=area]").val();
                 
+                //加载默认区域
                 var html = ['<option value="_NULL_">请选择</option>'];
                 region_Data[0].forEach(function(val){ 
                     var attrs = val.split(':');
                     html+='<option data-index="'+attrs[2]+'" value="'+attrs[1]+'">'+attrs[0]+'</option>';
                 }); 
-                
-                
                 $("#areaSelect").find("select:eq(0)").html(html) 
                 
-                //选中状态
+                
+                //区域选中状态
+                var area=$("#areaSelect input[name=area]").val();
                 if(area){
-                    selectIndex=0;
-                    areaArray=area.split(':');
-                    areaNameArray=areaArray[1].split('/');
+                    var selectIndex=0;
+                    var areaArray=area.split(':');
+                    var areaNameArray=areaArray[1].split('/');
                     areaNameArray.forEach(function(val,index){
-                        var tempArray=region_Data[index];
-                        if(selectIndex){
-                            tempArray=region_Data[index][selectIndex];
-                        }
+                        var tempArray=selectIndex?region_Data[index][selectIndex]:region_Data[index];
                         tempArray.forEach(function(v){ 
                             var attrs = v.split(':');
                             if(val==attrs[0]){
@@ -116,8 +116,7 @@
                         }); 
                         region_select(index,selectIndex)
                     });
-                    
-                    
+
                 }
      
                 
