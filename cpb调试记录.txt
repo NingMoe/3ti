@@ -15,3 +15,13 @@ D:\web\shiseido-cpb-code\custom\eaisync\lib\eaisale.php 561行 005接口支付�
 
 
 D:\web\shiseido-cpb-code\custom\b2c\lib\cart\objects.php 160行 活动规则修改
+
+
+支付回调：
+D:\web\cpb\custom\ectools\lib\payment\api.php
+
+D:\web\cpb\custom\weixin\lib\payment\plugin\wxqrpay.php
+
+
+D:\web\cpb\custom\base\lib\curl.php 44行 curl修改
+
