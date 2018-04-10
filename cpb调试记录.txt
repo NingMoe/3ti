@@ -25,3 +25,5 @@ D:\web\cpb\custom\weixin\lib\payment\plugin\wxqrpay.php
 
 D:\web\cpb\custom\base\lib\curl.php 44行 curl修改
 
+ob_end_clean();//去除boom头
+
