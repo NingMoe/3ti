@@ -27,3 +27,10 @@ D:\web\cpb\custom\base\lib\curl.php 44行 curl修改
 
 ob_end_clean();//去除boom头
 
+
+D:\web\shiseido-cpb-code\custom\b2c\model\analysis\sale.php  销售数据导出
+
+
+D:\web\shiseido-cpb-code\custom\b2c\controller\wap\order.php
+D:\web\shiseido-cpb-code\custom\b2c\controller\site\order.php 排除西藏地区下单
+
